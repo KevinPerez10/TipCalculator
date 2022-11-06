@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <div class="title">SPLI<br>TTER</div>
+
+  <div class="main">
+    <div class="input-section">
+      Bill
+      <div class="bill">
+        <input id="bill-el" class="input-bill" type="number" label="number">
+      </div>
+      Select Tip %
+      <div class="tip">
+        <button onclick="computeFive()">5%</button>
+        <button onclick="computeTen()">10%</button>
+        <button onclick="computeFifteen()">15%</button>
+        <button onclick="computeTwentyFive()">25%</button>
+        <button onclick="computeFifty()">50%</button>
+        <input onchange="computeCustom()" id="custom-btn-el" placeholder="Custom" class="tip-custom" type="number">
+      </div>
+      Number of People
+      <div class="num-people">
+        <input id="num-people-el" class="input-num-people" type="number">
+      </div>
+    </div>
+
+    <div class="result-section">
+      <div class="subtitle">
+        <div>
+          Tip Amount <br>
+          <p>/ person</p>
+        </div>
+        <div id="result-el" class="result">
+          $0.00
+        </div>
+      </div>
+
+      <div class="subtitle">
+        <div>
+          Total <br>
+          <p>/ person</p>
+        </div>
+        <div id="total-el" class="total">
+          $0.00
+        </div>
+      </div>
+
+      <button onclick="reset()" class="btn-reset">RESET</button>
+    </div>
+  </div>
+  <!-- Created by Kevin -->
+  <script src="app.js"></script>
+</body>
+</html>
